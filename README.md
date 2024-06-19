@@ -1,13 +1,4 @@
-*How to use this template:*
-
-- Styles for the demo go in css/base.css
-- Add build instructions and credits to the README.md
-- For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links of your likings, we'll do the rest):
-
--------
-
-# Title of the demo
+# Distortion and grain effect on scroll with shader
 
 *A description of the demo goes here.*
 
@@ -19,7 +10,20 @@
 
 ## Installation
 
-Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+Install dependencies:
+```
+yarn install
+```
+
+Run local environment:
+```
+yarn dev
+```
+
+Create build:
+```
+yarn build
+```
 
 ## Credits
 
@@ -27,14 +31,14 @@ Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn
 
 ## Misc
 
-Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
+Follow Jan Kohlbach: [Twitter](https://x.com/jankohlbach), [Instagram](https://instagram.com/jankohlbach.work), [GitHub](https://github.com/jankohlbach)
 
 Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
 ## License
 [MIT](LICENSE)
 
-Made with :blue_heart:  by [Codrops](http://www.codrops.com)
+Made with 💙 by [Codrops](http://www.codrops.com)
 
 
 

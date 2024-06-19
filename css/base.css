@@ -171,7 +171,6 @@ a:focus-visible {
 	padding: var(--page-padding);
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
 	position: relative;
 }
 
