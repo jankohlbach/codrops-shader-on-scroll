@@ -7,6 +7,8 @@ import { resizeThreeCanvas, calcFov, debounce, lerp } from './utils'
 
 import baseVertex from '../shader/baseVertex.glsl'
 import baseFragment from '../shader/baseFragment.glsl'
+import effectVertex from '../shader/effectVertex.glsl'
+import effectFragment from '../shader/effectFragment.glsl'
 
 gsap.registerPlugin(CustomEase)
 
@@ -92,6 +94,10 @@ const handleMouseLeave = (index) => {
   gsap.to(
     mediaStore[index],
     { mouseEnter: 0, duration: 0.6, ease: CustomEase.create('custom', '0.4, 0, 0.2, 1') }
+  )
+  gsap.to(
+    mediaStore[index].mouseOverPos.target,
+    { x: 0.5, y: 0.5, duration: 0.6, ease: CustomEase.create('custom', '0.4, 0, 0.2, 1') }
   )
 }
 
@@ -215,8 +221,8 @@ material = new THREE.ShaderMaterial({
     uMouseEnter: { value: 0 },
     uMouseOverPos: { value: new THREE.Vector2(0.5, 0.5) }
   },
-  vertexShader: baseVertex,
-  fragmentShader: baseFragment,
+  vertexShader: effectVertex,
+  fragmentShader: effectFragment,
   glslVersion: THREE.GLSL3
 })
 

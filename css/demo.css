@@ -35,12 +35,12 @@
 
 /* webgl */
 [data-webgl-media] {
-  opacity: 0.5;
+  opacity: 0;
 }
 
 /* demo */
 body {
-  background-color: rgb(239, 255, 255);
+  background-color: #f1dfd1;
 }
 
 canvas {

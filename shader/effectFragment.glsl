@@ -35,8 +35,8 @@ void main() {
   float noise = snoise(gl_FragCoord.xy);
 
   // modify texture coordinates
-  texCoords.x += mix(0.0, circle * noise * 0.01, uMouseEnter);
-  texCoords.y += mix(0.0, circle * noise * 0.01, uMouseEnter);
+  texCoords.x += mix(0.0, circle * noise * 0.01, uMouseEnter + uScrollVelocity * 0.1);
+  texCoords.y += mix(0.0, circle * noise * 0.01, uMouseEnter + uScrollVelocity * 0.1);
 
   // texture
   vec3 texture = vec3(texture(uTexture, texCoords));
