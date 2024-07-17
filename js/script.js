@@ -146,7 +146,7 @@ const setMediaStore = (scrollY) => {
       height: bounds.height,
       top: bounds.top + scrollY,
       left: bounds.left,
-      isInView: bounds.top >= 0 && bounds.top <= window.innerHeight,
+      isInView: bounds.top >= -500 && bounds.top <= window.innerHeight + 500,
       mouseEnter: 0,
       mouseOverPos: {
         current: {
@@ -194,7 +194,7 @@ observer = new IntersectionObserver(
       }
     })
   },
-  { rootMargin: '20px 0px 20px 0px' }
+  { rootMargin: '500px 0px 500px 0px' }
 )
 
 // scene
