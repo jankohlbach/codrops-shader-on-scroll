@@ -286,3 +286,8 @@ window.addEventListener('resize', debounce(() => {
     object.material.uniforms.uBorderRadius.value = getComputedStyle(object.media).borderRadius.replace('px', '')
   })
 }))
+
+// Add the preloader logic
+window.addEventListener('load', () => {
+  document.body.classList.remove('loading')
+})

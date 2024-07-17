@@ -30,7 +30,7 @@
   display: grid;
   gap: calc(var(--grid-gutter) * 5) var(--grid-gutter);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
-  padding-block: 8rem;
+  padding-block: 6rem;
 }
 
 /* webgl */
@@ -39,10 +39,6 @@
 }
 
 /* demo */
-body {
-  background-color: #f1dfd1;
-}
-
 canvas {
   position: fixed;
   inset: 0;
@@ -53,32 +49,50 @@ canvas {
   pointer-events: none;
 }
 
+.img-wrap {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  margin: 0;
+}
+
 .img {
   display: block;
+  grid-column: 1 / span 2;
   max-width: 100%;
 }
 
-.img-1 {
-  grid-column: 2 / span 2;
+.img-wrap figcaption {
+  max-width: 200px;
+  align-self: end;
+}
+
+.img-wrap figcaption span {
+  display: block;
+}
+
+.img-wrap-1 {
+  grid-column: 2 / span 3;
   grid-row: 1;
 }
 
-.img-2 {
-  grid-column: 5 / span 2;
+.img-wrap-2 {
+  grid-column: 4 / span 3;
   grid-row: 2;
 }
 
-.img-3 {
-  grid-column: 3 / span 2;
+.img-wrap-3 {
+  grid-column: 3 / span 3;
   grid-row: 3;
 }
 
-.img-4 {
-  grid-column: 1 / span 2;
+.img-wrap-4 {
+  grid-column: 1 / span 3;
   grid-row: 4;
 }
 
-.img-5 {
-  grid-column: 4 / span 2;
+.img-wrap-5 {
+  grid-column: 4 / span 3;
   grid-row: 5;
 }
