@@ -2,7 +2,7 @@
 
 Demo for the tutorial on how to create on-scroll distortion and grain effect with shaders in Three.js.
 
-![Image](https://tympanus.net/codrops/wp-content/uploads/2024/07/grainonscroll.png?x20951)
+![Image](https://tympanus.net/codrops/wp-content/uploads/2024/07/grainscroll.png)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=78948)
 
