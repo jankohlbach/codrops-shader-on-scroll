@@ -226,9 +226,6 @@ material = new THREE.ShaderMaterial({
   glslVersion: THREE.GLSL3
 })
 
-// media details
-setMediaStore(scroll.scrollY)
-
 // renderer
 const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true })
 renderer.setSize(window.innerWidth, window.innerHeight)
@@ -264,8 +261,6 @@ const render = (time = 0) => {
   requestAnimationFrame(render)
 }
 
-requestAnimationFrame(render)
-
 window.addEventListener('resize', debounce(() => {
   const fov = calcFov(CAMERA_POS)
 
@@ -289,5 +284,10 @@ window.addEventListener('resize', debounce(() => {
 
 // Add the preloader logic
 window.addEventListener('load', () => {
+  // media details
+  setMediaStore(scroll.scrollY)
+
+  requestAnimationFrame(render)
+
   document.body.classList.remove('loading')
 })
