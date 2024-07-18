@@ -1,12 +1,12 @@
-# Distortion and grain effect on scroll with shader
+# On-Scroll Image Distortion and Grain Effect
 
-*A description of the demo goes here.*
+Demo for the tutorial on how to create on-scroll distortion and grain effect with shaders in Three.js.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Image](https://tympanus.net/codrops/wp-content/uploads/2024/07/grainonscroll.png?x20951)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=78948)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Tutorials/ShaderOnScroll/)
 
 ## Installation
 
@@ -38,7 +38,7 @@ Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.co
 ## License
 [MIT](LICENSE)
 
-Made with 💙 by [Codrops](http://www.codrops.com)
+Made with 💙 by [Codrops](http://www.codrops.com) and [Jan Kohlbach](https://x.com/jankohlbach)
 
 
 
